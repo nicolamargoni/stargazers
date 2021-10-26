@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (5.4.4)
+  - CocoaAsyncSocket (7.6.5)
+  - Criollo (1.0.1):
+    - CocoaAsyncSocket (~> 7.6.4)
+  - Kingfisher (7.1.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - Criollo (~> 1.0)
+  - Kingfisher (~> 7.1)
+  - Moya (~> 15.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaAsyncSocket
+    - Criollo
+    - Kingfisher
+    - Moya
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  Criollo: 8122c5dbdf7dcf590e0d6b5d9e75e2073cd6234d
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+
+PODFILE CHECKSUM: 7baf6aff5a9da3d23456c31afe56ed21db1d52ec
+
+COCOAPODS: 1.11.2
