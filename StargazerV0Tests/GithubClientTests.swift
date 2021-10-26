@@ -6,7 +6,7 @@ class GithubClientTests: XCTestCase {
         let client = GithubClient()
         let testExpectation = expectation(description: "any")
         
-        client.stargazers(owner: "Moya", repo: "Moya") { list in
+        client.stargazers(owner: "Moya", repo: "Moya", page: 2) { list in
             testExpectation.fulfill()
             print(list)
         }

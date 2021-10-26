@@ -1,7 +1,7 @@
 import Moya
 
 enum Github {
-    case stargazers(owner: String, repo: String)
+    case stargazers(owner: String, repo: String, page: Int)
 }
 
 extension Github: TargetType {
@@ -9,7 +9,7 @@ extension Github: TargetType {
     
     var path: String {
         switch self {
-        case .stargazers(let owner, let repo):
+        case .stargazers(let owner, let repo, _):
             return "/repos/\(owner)/\(repo)/stargazers"
         }
     }
@@ -23,8 +23,8 @@ extension Github: TargetType {
     
     var task: Task {
         switch self {
-        case .stargazers:
-            return .requestPlain
+        case .stargazers(_,_, let page):
+            return .requestParameters(parameters: ["page":page], encoding: URLEncoding.queryString)
         }
     }
     

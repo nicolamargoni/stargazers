@@ -11,7 +11,7 @@ import SwiftUI
 struct StargazerV0App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: StargazerViewModel(service: GithubClient()))
+            StargazerList(viewModel: StargazerViewModel(service: GithubClient()))
         }
     }
 }
