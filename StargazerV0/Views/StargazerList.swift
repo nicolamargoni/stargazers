@@ -1,4 +1,5 @@
 import SwiftUI
+import Moya
 
 struct StargazerList: View {
     @ObservedObject var viewModel: StargazerViewModel
@@ -81,6 +82,6 @@ struct StargazerList: View {
 struct StargazerList_Previews: PreviewProvider {
     
     static var previews: some View {
-        StargazerList(viewModel: StargazerViewModel(service: GithubClient()))
+        StargazerList(viewModel: StargazerViewModel(service: GithubClient(provider: MoyaProvider<Github>())))
     }
 }

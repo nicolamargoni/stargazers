@@ -8,7 +8,6 @@ class StargazerViewModelTests: XCTestCase {
         service = MockGitHubService()
     }
     
-    
     private func initViewModel(with state: StargazerViewModel.State) {
         viewModel = StargazerViewModel(service: service, state: state)
     }

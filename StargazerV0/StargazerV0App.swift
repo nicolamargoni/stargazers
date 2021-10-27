@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Moya
 
 @main
 struct StargazerV0App: App {
     var body: some Scene {
         WindowGroup {
-            StargazerList(viewModel: StargazerViewModel(service: GithubClient()))
+            StargazerList(viewModel: StargazerViewModel(service: GithubClient(provider: MoyaProvider<Github>())))
         }
     }
 }

@@ -5,9 +5,14 @@ protocol GithubService {
 }
 
 class GithubClient: GithubService {
+    private let provider: MoyaProvider<Github>
+    
+    init (provider: MoyaProvider<Github>) {
+        self.provider = provider
+    }
     
     func stargazers(owner: String, repo: String, perPage: Int, page: Int, completion: @escaping (Result<[Stargazer], GithubServiceError>) -> Void) {
-        MoyaProvider<Github>().request(.stargazers(owner: owner, repo: repo, perPage: perPage, page: page)) { result in
+        provider.request(.stargazers(owner: owner, repo: repo, perPage: perPage, page: page)) { result in
             switch result {
             case .success(let response):
                 switch response.statusCode {
