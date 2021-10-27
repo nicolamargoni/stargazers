@@ -6,40 +6,31 @@ struct StargazerList: View {
     @State private var owner: String = ""
     @State private var repo: String = ""
     
+
+    
     var body: some View {
         NavigationView {
             VStack {
                 textField(title: "owner", value: $owner)
                 textField(title: "repo", value: $repo)
-                Button("Search") {
-                    hideKeyboard()
+                button(title: "Search") {
                     viewModel.didFormSubmit(owner: owner, repo: repo)
                 }
-                .padding()
-                .clipShape(Capsule())
                 
-                if let list = viewModel.state.list {
-                    List {
-                        ForEach(list) { stargazer in
-                            StargazerRow(stargazer: stargazer)
-                        }
-                        
-                        if !viewModel.state.allDataLoaded {
-                            HStack {
-                                Spacer()
-                                ProgressView()
-                                    .onAppear {
-                                        viewModel.loadMore()
-                                    }
-                                Spacer()
-                            }
-                        }
-                    }
-                }
+                list()
                 
                 Spacer()
             }.navigationBarTitle("Stargazers")
         }
+    }
+    
+    private func button(title: String, action: @escaping () -> Void) -> some View {
+        Button(title) {
+            hideKeyboard()
+            action()
+        }
+        .padding()
+        .clipShape(Capsule())
     }
     
     private func textField(title: String, value: Binding<String>) -> some View {
@@ -47,6 +38,27 @@ struct StargazerList: View {
             .textFieldStyle(.roundedBorder)
             .disableAutocorrection(true)
             .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+    }
+    
+    fileprivate func list() -> some View {
+        List {
+            if let list = viewModel.state.list {
+                ForEach(list) { stargazer in
+                    StargazerRow(stargazer: stargazer)
+                }
+            
+            if !viewModel.state.allDataLoaded {
+                HStack {
+                    Spacer()
+                    ProgressView()
+                        .onAppear {
+                            viewModel.loadMore()
+                        }
+                    Spacer()
+                }
+            }
+            }
+        }
     }
 }
 
