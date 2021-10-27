@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		026DB089135178BCC6A3C1E9 /* Pods_StargazerV0_StargazerV0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A184DB9A82BCB65DF49E565 /* Pods_StargazerV0_StargazerV0UITests.framework */; };
+		5F2C22DF27294B64003B2DC0 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C22DE27294B64003B2DC0 /* View+Extensions.swift */; };
+		5F2C22E127294CC9003B2DC0 /* StargazerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */; };
 		5F96062427281DAD0016160D /* StargazerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062327281DAD0016160D /* StargazerViewModel.swift */; };
 		5F96062527281DAD0016160D /* StargazerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062327281DAD0016160D /* StargazerViewModel.swift */; };
 		5F96062827281F940016160D /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062727281F940016160D /* StargazerRow.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		20255AE7B41E08A7EC1A2139 /* Pods-StargazerV0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0.debug.xcconfig"; path = "Target Support Files/Pods-StargazerV0/Pods-StargazerV0.debug.xcconfig"; sourceTree = "<group>"; };
 		4A184DB9A82BCB65DF49E565 /* Pods_StargazerV0_StargazerV0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazerV0_StargazerV0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2C22DE27294B64003B2DC0 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModelTests.swift; sourceTree = "<group>"; };
 		5F96062327281DAD0016160D /* StargazerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModel.swift; sourceTree = "<group>"; };
 		5F96062727281F940016160D /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		5F960629272823E40016160D /* StargazerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerList.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			children = (
 				5F96062727281F940016160D /* StargazerRow.swift */,
 				5F960629272823E40016160D /* StargazerList.swift */,
+				5F2C22DE27294B64003B2DC0 /* View+Extensions.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */,
+				5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */,
 			);
 			path = StargazerV0Tests;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 				5F96062827281F940016160D /* StargazerRow.swift in Sources */,
 				5FFDE82927272E9C00A1E577 /* Github.swift in Sources */,
 				5F96062A272823E40016160D /* StargazerList.swift in Sources */,
+				5F2C22DF27294B64003B2DC0 /* View+Extensions.swift in Sources */,
 				5FFDE7F32726FBE800A1E577 /* StargazerV0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2C22E127294CC9003B2DC0 /* StargazerViewModelTests.swift in Sources */,
 				5F96062527281DAD0016160D /* StargazerViewModel.swift in Sources */,
 				5FFDE82627272DF500A1E577 /* Stargazer.swift in Sources */,
 				5FFDE81D27270DFF00A1E577 /* GithubClientTests.swift in Sources */,

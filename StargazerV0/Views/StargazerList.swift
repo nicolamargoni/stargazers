@@ -6,8 +6,6 @@ struct StargazerList: View {
     @State private var owner: String = ""
     @State private var repo: String = ""
     
-
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -16,9 +14,11 @@ struct StargazerList: View {
                 button(title: "Search") {
                     viewModel.didFormSubmit(owner: owner, repo: repo)
                 }
-                
+                if let error = viewModel.state.error {
+                    Text(error)
+                        .foregroundColor(.red)
+                }
                 list()
-                
                 Spacer()
             }.navigationBarTitle("Stargazers")
         }
@@ -46,17 +46,17 @@ struct StargazerList: View {
                 ForEach(list) { stargazer in
                     StargazerRow(stargazer: stargazer)
                 }
-            
-            if !viewModel.state.allDataLoaded {
-                HStack {
-                    Spacer()
-                    ProgressView()
-                        .onAppear {
-                            viewModel.loadMore()
-                        }
-                    Spacer()
+                
+                if !viewModel.state.allDataLoaded {
+                    HStack {
+                        Spacer()
+                        ProgressView()
+                            .onAppear {
+                                viewModel.loadMore()
+                            }
+                        Spacer()
+                    }
                 }
-            }
             }
         }
     }
@@ -68,11 +68,3 @@ struct StargazerList_Previews: PreviewProvider {
         StargazerList(viewModel: StargazerViewModel(service: GithubClient()))
     }
 }
-
-#if canImport(UIKit)
-extension View {
-    func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-#endif

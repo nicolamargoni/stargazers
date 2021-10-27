@@ -1,4 +1,4 @@
-struct Stargazer: Identifiable {
+struct Stargazer: Identifiable, Equatable {
     let id: Int
     let name: String
     let avatarUrl: String

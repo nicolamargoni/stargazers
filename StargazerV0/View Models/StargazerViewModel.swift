@@ -4,10 +4,11 @@ import SwiftUI
 class StargazerViewModel: ObservableObject {
     private let service: GithubService
     
-    @Published private(set) var state = State()
+    @Published private(set) var state: State
     
-    init(service: GithubService) {
+    init(service: GithubService, state: State = State()) {
         self.service = service
+        self.state = state
     }
     
     func didFormSubmit(owner: String, repo: String) {
@@ -15,6 +16,7 @@ class StargazerViewModel: ObservableObject {
         state.repo = repo
         state.allDataLoaded = false
         state.list = nil
+        state.error = nil
         
         fetchStargazers()
     }
@@ -24,23 +26,23 @@ class StargazerViewModel: ObservableObject {
     }
 
     private func fetchStargazers() {
-        service.stargazers(owner: state.owner, repo: state.repo, perPage: RESULTS_PER_PAGE, page: nextPage()) { [weak self] stargazers in
+        service.stargazers(owner: state.owner, repo: state.repo, perPage: RESULTS_PER_PAGE, page: nextPage()) { [weak self] result in
             guard let self = self else { return }
             
-            guard let stargazers = stargazers else {
-                //ERROR
-                return
+            switch result {
+            case .success(let stargazers):
+                if self.state.list == nil {
+                    self.state.list = []
+                }
+                
+                if stargazers.count < self.RESULTS_PER_PAGE {
+                    self.state.allDataLoaded = true
+                }
+                
+                self.state.list?.append(contentsOf: stargazers)
+            case .failure(let error):
+                self.state.error = error.errorDescription
             }
-            
-            if self.state.list == nil {
-                self.state.list = []
-            }
-            
-            if stargazers.count < self.RESULTS_PER_PAGE {
-                self.state.allDataLoaded = true
-            }
-            
-            self.state.list?.append(contentsOf: stargazers)
         }
     }
     
