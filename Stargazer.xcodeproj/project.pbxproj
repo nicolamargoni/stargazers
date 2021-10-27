@@ -147,6 +147,7 @@
 		5FFDE7F12726FBE800A1E577 /* Stargazer */ = {
 			isa = PBXGroup;
 			children = (
+				5FFDE7F62726FBE900A1E577 /* Assets.xcassets */,
 				5FFDE7F22726FBE800A1E577 /* StargazerApp.swift */,
 				5F96062627281F7A0016160D /* Views */,
 				5F96062227281D660016160D /* View Models */,
@@ -154,7 +155,6 @@
 				5FFDE82727272E8A00A1E577 /* Network */,
 				5FFDE82327272DD300A1E577 /* Models */,
 				5FFDE81E27270F9700A1E577 /* Service */,
-				5FFDE82227272D9F00A1E577 /* Common */,
 			);
 			path = Stargazer;
 			sourceTree = "<group>";
@@ -191,14 +191,6 @@
 				5FFDE81F27270FB500A1E577 /* GithubService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		5FFDE82227272D9F00A1E577 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				5FFDE7F62726FBE900A1E577 /* Assets.xcassets */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		5FFDE82327272DD300A1E577 /* Models */ = {
