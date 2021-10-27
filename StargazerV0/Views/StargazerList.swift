@@ -3,32 +3,51 @@ import SwiftUI
 struct StargazerList: View {
     @ObservedObject var viewModel: StargazerViewModel
     
+    @State private var owner: String = ""
+    @State private var repo: String = ""
+    
     var body: some View {
         NavigationView {
             VStack {
-                if viewModel.state.isLoading {
-                    ProgressView()
+                textField(title: "owner", value: $owner)
+                textField(title: "repo", value: $repo)
+                Button("Search") {
+                    hideKeyboard()
+                    viewModel.didFormSubmit(owner: owner, repo: repo)
                 }
-                List {
-                    ForEach(viewModel.state.list) { stargazer in
-                        StargazerRow(stargazer: stargazer)
-                    }
-                    HStack {
-                        Spacer()
-                        ProgressView().onAppear {
-                            viewModel.loadMore()
+                .padding()
+                .clipShape(Capsule())
+                
+                if let list = viewModel.state.list {
+                    List {
+                        ForEach(list) { stargazer in
+                            StargazerRow(stargazer: stargazer)
                         }
-                        Spacer()
+                        
+                        if !viewModel.state.allDataLoaded {
+                            HStack {
+                                Spacer()
+                                ProgressView()
+                                    .onAppear {
+                                        viewModel.loadMore()
+                                    }
+                                Spacer()
+                            }
+                        }
                     }
                 }
-            }
-            .navigationBarTitle("Stargazers")
-            .onAppear {
-                viewModel.didFormSubmit(owner: "Moya", repo: "Moya")
-            }
+                
+                Spacer()
+            }.navigationBarTitle("Stargazers")
         }
     }
     
+    private func textField(title: String, value: Binding<String>) -> some View {
+        TextField(title, text: value)
+            .textFieldStyle(.roundedBorder)
+            .disableAutocorrection(true)
+            .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20))
+    }
 }
 
 struct StargazerList_Previews: PreviewProvider {
@@ -37,3 +56,11 @@ struct StargazerList_Previews: PreviewProvider {
         StargazerList(viewModel: StargazerViewModel(service: GithubClient()))
     }
 }
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

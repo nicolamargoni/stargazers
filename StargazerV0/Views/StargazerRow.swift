@@ -8,12 +8,12 @@ struct StargazerRow: View {
         HStack(spacing: 20) {
             KFImage(URL(string: stargazer.avatarUrl))
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
             Text(stargazer.name)
             Spacer()
         }
-        .padding(20)
+        .padding(10)
     }
 }
 

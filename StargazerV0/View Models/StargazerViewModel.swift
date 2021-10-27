@@ -13,7 +13,8 @@ class StargazerViewModel: ObservableObject {
     func didFormSubmit(owner: String, repo: String) {
         state.owner = owner
         state.repo = repo
-        state.list = []
+        state.allDataLoaded = false
+        state.list = nil
         
         fetchStargazers()
     }
@@ -23,34 +24,43 @@ class StargazerViewModel: ObservableObject {
     }
 
     private func fetchStargazers() {
-        state.isLoading = true
-        service.stargazers(owner: state.owner, repo: state.repo, page: nextPage()) { [weak self] list in
+        service.stargazers(owner: state.owner, repo: state.repo, perPage: RESULTS_PER_PAGE, page: nextPage()) { [weak self] stargazers in
             guard let self = self else { return }
             
-            guard let list = list else {
-                self.state.error = "Si è verificato un errore..."
+            guard let stargazers = stargazers else {
+                //ERROR
                 return
             }
             
-            self.state.list.append(contentsOf: list)
-            self.state.isLoading = false
+            if self.state.list == nil {
+                self.state.list = []
+            }
+            
+            if stargazers.count < self.RESULTS_PER_PAGE {
+                self.state.allDataLoaded = true
+            }
+            
+            self.state.list?.append(contentsOf: stargazers)
         }
-
     }
     
     private func nextPage() -> Int {
-        (state.list.count / ITEMS_FOR_PAGE) + 1
+        guard let count =  state.list?.count else {
+            return 1
+        }
+        
+        return (count / RESULTS_PER_PAGE) + 1
     }
     
-    private let ITEMS_FOR_PAGE = 20
+    private let RESULTS_PER_PAGE = 10
 }
 
 extension StargazerViewModel {
     struct State {
         var owner = ""
         var repo = ""
-        var isLoading = false
-        var list = [Stargazer]()
-        var error = ""
+        var allDataLoaded = false
+        var list: [Stargazer]?
+        var error: String?
     }
 }
