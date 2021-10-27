@@ -12,6 +12,7 @@
 		5F2C22E127294CC9003B2DC0 /* StargazerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */; };
 		5F78EBFE2729640600CBC0DC /* MockGithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78EBFD2729640600CBC0DC /* MockGithubService.swift */; };
 		5F78EC002729940800CBC0DC /* GithubServicIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78EBFF2729940800CBC0DC /* GithubServicIntegrationTests.swift */; };
+		5F78EC022729B5D100CBC0DC /* StargazerListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78EC012729B5D100CBC0DC /* StargazerListUITests.swift */; };
 		5F96062427281DAD0016160D /* StargazerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062327281DAD0016160D /* StargazerViewModel.swift */; };
 		5F96062527281DAD0016160D /* StargazerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062327281DAD0016160D /* StargazerViewModel.swift */; };
 		5F96062827281F940016160D /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062727281F940016160D /* StargazerRow.swift */; };
@@ -55,6 +56,7 @@
 		5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModelTests.swift; sourceTree = "<group>"; };
 		5F78EBFD2729640600CBC0DC /* MockGithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGithubService.swift; sourceTree = "<group>"; };
 		5F78EBFF2729940800CBC0DC /* GithubServicIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServicIntegrationTests.swift; sourceTree = "<group>"; };
+		5F78EC012729B5D100CBC0DC /* StargazerListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerListUITests.swift; sourceTree = "<group>"; };
 		5F96062327281DAD0016160D /* StargazerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModel.swift; sourceTree = "<group>"; };
 		5F96062727281F940016160D /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		5F960629272823E40016160D /* StargazerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerList.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		5FFDE80C2726FBEA00A1E577 /* StargazerUITests */ = {
 			isa = PBXGroup;
 			children = (
+				5F78EC012729B5D100CBC0DC /* StargazerListUITests.swift */,
 			);
 			path = StargazerUITests;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 					};
 					5FFDE8082726FBEA00A1E577 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 5FFDE7EE2726FBE800A1E577;
 					};
 				};
@@ -500,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F78EC022729B5D100CBC0DC /* StargazerListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +757,7 @@
 			baseConfigurationReference = D5FBAE817AB9AC0A25886CDA /* Pods-Stargazer-StargazerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -763,10 +769,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.StargazerV0UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StargazerV0;
+				TEST_TARGET_NAME = Stargazer;
 			};
 			name = Debug;
 		};
@@ -775,6 +783,7 @@
 			baseConfigurationReference = 88FCF13F767C2559A0C89D9A /* Pods-Stargazer-StargazerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -786,10 +795,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.StargazerV0UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StargazerV0;
+				TEST_TARGET_NAME = Stargazer;
 			};
 			name = Release;
 		};
