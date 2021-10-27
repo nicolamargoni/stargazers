@@ -25,8 +25,7 @@ All you need to start with this project is
 If you don't have cocoapods on your mac, or you don't know what cocoapod is, check this out https://cocoapods.org/
 
 # Let's start
-
-1  
+ 
 After cloning project from Github, open terminal and navigate in project folder, then install all pods with command.
 
 > pod install
