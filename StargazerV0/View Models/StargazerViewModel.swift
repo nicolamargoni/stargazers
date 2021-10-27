@@ -18,16 +18,23 @@ class StargazerViewModel: ObservableObject {
         state.list = nil
         state.error = nil
         
-        fetchStargazers()
+        state.isLoading = true
+        fetchStargazers {
+            self.state.isLoading = false
+        }
     }
     
     func loadMore() {
-        fetchStargazers()
+        fetchStargazers {}
     }
 
-    private func fetchStargazers() {
+    private func fetchStargazers(completion: @escaping () -> Void) {
         service.stargazers(owner: state.owner, repo: state.repo, perPage: RESULTS_PER_PAGE, page: nextPage()) { [weak self] result in
             guard let self = self else { return }
+            
+            defer {
+                completion()
+            }
             
             switch result {
             case .success(let stargazers):
@@ -39,7 +46,7 @@ class StargazerViewModel: ObservableObject {
                     self.state.allDataLoaded = true
                 }
                 
-                self.state.list?.append(contentsOf: stargazers)
+                self.state.list! += stargazers
             case .failure(let error):
                 self.state.error = error.errorDescription
             }
@@ -64,5 +71,6 @@ extension StargazerViewModel {
         var allDataLoaded = false
         var list: [Stargazer]?
         var error: String?
+        var isLoading = false
     }
 }
