@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5FFDE7EE2726FBE800A1E577"
-               BuildableName = "StargazerV0.app"
-               BlueprintName = "StargazerV0"
-               ReferencedContainer = "container:StargazerV0.xcodeproj">
+               BuildableName = "Stargazer.app"
+               BlueprintName = "Stargazer"
+               ReferencedContainer = "container:Stargazer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,19 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5FFDE7FE2726FBEA00A1E577"
-               BuildableName = "StargazerV0Tests.xctest"
-               BlueprintName = "StargazerV0Tests"
-               ReferencedContainer = "container:StargazerV0.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5FFDE8082726FBEA00A1E577"
-               BuildableName = "StargazerV0UITests.xctest"
-               BlueprintName = "StargazerV0UITests"
-               ReferencedContainer = "container:StargazerV0.xcodeproj">
+               BuildableName = "StargazerTests.xctest"
+               BlueprintName = "StargazerTests"
+               ReferencedContainer = "container:Stargazer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FFDE7EE2726FBE800A1E577"
-            BuildableName = "StargazerV0.app"
-            BlueprintName = "StargazerV0"
-            ReferencedContainer = "container:StargazerV0.xcodeproj">
+            BuildableName = "Stargazer.app"
+            BlueprintName = "Stargazer"
+            ReferencedContainer = "container:Stargazer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5FFDE7EE2726FBE800A1E577"
-            BuildableName = "StargazerV0.app"
-            BlueprintName = "StargazerV0"
-            ReferencedContainer = "container:StargazerV0.xcodeproj">
+            BuildableName = "Stargazer.app"
+            BlueprintName = "Stargazer"
+            ReferencedContainer = "container:Stargazer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		026DB089135178BCC6A3C1E9 /* Pods_StargazerV0_StargazerV0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A184DB9A82BCB65DF49E565 /* Pods_StargazerV0_StargazerV0UITests.framework */; };
+		430D9BCBAF5F8650678966F3 /* Pods_StargazerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7C869AE5030E168EE07E5A /* Pods_StargazerTests.framework */; };
 		5F2C22DF27294B64003B2DC0 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C22DE27294B64003B2DC0 /* View+Extensions.swift */; };
 		5F2C22E127294CC9003B2DC0 /* StargazerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */; };
 		5F78EBFE2729640600CBC0DC /* MockGithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78EBFD2729640600CBC0DC /* MockGithubService.swift */; };
@@ -16,7 +16,7 @@
 		5F96062527281DAD0016160D /* StargazerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062327281DAD0016160D /* StargazerViewModel.swift */; };
 		5F96062827281F940016160D /* StargazerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F96062727281F940016160D /* StargazerRow.swift */; };
 		5F96062A272823E40016160D /* StargazerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F960629272823E40016160D /* StargazerList.swift */; };
-		5FFDE7F32726FBE800A1E577 /* StargazerV0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F22726FBE800A1E577 /* StargazerV0App.swift */; };
+		5FFDE7F32726FBE800A1E577 /* StargazerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F22726FBE800A1E577 /* StargazerApp.swift */; };
 		5FFDE7F72726FBE900A1E577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F62726FBE900A1E577 /* Assets.xcassets */; };
 		5FFDE7FA2726FBE900A1E577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F92726FBE900A1E577 /* Preview Assets.xcassets */; };
 		5FFDE81D27270DFF00A1E577 /* GithubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */; };
@@ -26,8 +26,8 @@
 		5FFDE82627272DF500A1E577 /* Stargazer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE82427272DF500A1E577 /* Stargazer.swift */; };
 		5FFDE82927272E9C00A1E577 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE82827272E9C00A1E577 /* Github.swift */; };
 		5FFDE82A27272E9C00A1E577 /* Github.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE82827272E9C00A1E577 /* Github.swift */; };
-		88841765700DEBB58BEC0167 /* Pods_StargazerV0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F93F84D21B5A34F45592548 /* Pods_StargazerV0Tests.framework */; };
-		B994D59CEDAD7340B7E0416C /* Pods_StargazerV0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8890072E89BB8C083660DF /* Pods_StargazerV0.framework */; };
+		C012725FDBB250B212BA34DA /* Pods_Stargazer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBE9E9853980E258659A219 /* Pods_Stargazer.framework */; };
+		D5B96D2658476CB88906C836 /* Pods_Stargazer_StargazerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDD7D7EBD5E4898ED546DA6 /* Pods_Stargazer_StargazerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20255AE7B41E08A7EC1A2139 /* Pods-StargazerV0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0.debug.xcconfig"; path = "Target Support Files/Pods-StargazerV0/Pods-StargazerV0.debug.xcconfig"; sourceTree = "<group>"; };
-		4A184DB9A82BCB65DF49E565 /* Pods_StargazerV0_StargazerV0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazerV0_StargazerV0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C928E11749EB10A2FC88F69 /* Pods-Stargazer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazer.debug.xcconfig"; path = "Target Support Files/Pods-Stargazer/Pods-Stargazer.debug.xcconfig"; sourceTree = "<group>"; };
+		45F8FFC45BCDDCB80A0BCCA3 /* Pods-StargazerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerTests.debug.xcconfig"; path = "Target Support Files/Pods-StargazerTests/Pods-StargazerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DBE9E9853980E258659A219 /* Pods_Stargazer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargazer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2C22DE27294B64003B2DC0 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		5F2C22E027294CC9003B2DC0 /* StargazerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModelTests.swift; sourceTree = "<group>"; };
 		5F78EBFD2729640600CBC0DC /* MockGithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGithubService.swift; sourceTree = "<group>"; };
@@ -57,23 +58,22 @@
 		5F96062327281DAD0016160D /* StargazerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerViewModel.swift; sourceTree = "<group>"; };
 		5F96062727281F940016160D /* StargazerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerRow.swift; sourceTree = "<group>"; };
 		5F960629272823E40016160D /* StargazerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerList.swift; sourceTree = "<group>"; };
-		5FFDE7EF2726FBE800A1E577 /* StargazerV0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StargazerV0.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFDE7F22726FBE800A1E577 /* StargazerV0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerV0App.swift; sourceTree = "<group>"; };
+		5FFDE7EF2726FBE800A1E577 /* Stargazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFDE7F22726FBE800A1E577 /* StargazerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerApp.swift; sourceTree = "<group>"; };
 		5FFDE7F62726FBE900A1E577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FFDE7F92726FBE900A1E577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5FFDE7FF2726FBEA00A1E577 /* StargazerV0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerV0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFDE8092726FBEA00A1E577 /* StargazerV0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerV0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFDE7FF2726FBEA00A1E577 /* StargazerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FFDE8092726FBEA00A1E577 /* StargazerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientTests.swift; sourceTree = "<group>"; };
 		5FFDE81F27270FB500A1E577 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		5FFDE82427272DF500A1E577 /* Stargazer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
 		5FFDE82827272E9C00A1E577 /* Github.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github.swift; sourceTree = "<group>"; };
-		71869614FC27A3A671566062 /* Pods-StargazerV0-StargazerV0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0-StargazerV0UITests.release.xcconfig"; path = "Target Support Files/Pods-StargazerV0-StargazerV0UITests/Pods-StargazerV0-StargazerV0UITests.release.xcconfig"; sourceTree = "<group>"; };
-		8456E2362781CDD937FA3009 /* Pods-StargazerV0-StargazerV0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0-StargazerV0UITests.debug.xcconfig"; path = "Target Support Files/Pods-StargazerV0-StargazerV0UITests/Pods-StargazerV0-StargazerV0UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8F93F84D21B5A34F45592548 /* Pods_StargazerV0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazerV0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF0404DAE41F7BE758CC788 /* Pods-StargazerV0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0Tests.debug.xcconfig"; path = "Target Support Files/Pods-StargazerV0Tests/Pods-StargazerV0Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B60C4DC544C8954539AC9609 /* Pods-StargazerV0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0.release.xcconfig"; path = "Target Support Files/Pods-StargazerV0/Pods-StargazerV0.release.xcconfig"; sourceTree = "<group>"; };
-		CD8890072E89BB8C083660DF /* Pods_StargazerV0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazerV0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95E87074856F393E8629C0D /* Pods-StargazerV0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerV0Tests.release.xcconfig"; path = "Target Support Files/Pods-StargazerV0Tests/Pods-StargazerV0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		88BFB890E273632B4751B0A4 /* Pods-Stargazer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazer.release.xcconfig"; path = "Target Support Files/Pods-Stargazer/Pods-Stargazer.release.xcconfig"; sourceTree = "<group>"; };
+		88FCF13F767C2559A0C89D9A /* Pods-Stargazer-StargazerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazer-StargazerUITests.release.xcconfig"; path = "Target Support Files/Pods-Stargazer-StargazerUITests/Pods-Stargazer-StargazerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BDD7D7EBD5E4898ED546DA6 /* Pods_Stargazer_StargazerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargazer_StargazerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7C869AE5030E168EE07E5A /* Pods_StargazerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FBAE817AB9AC0A25886CDA /* Pods-Stargazer-StargazerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazer-StargazerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Stargazer-StargazerUITests/Pods-Stargazer-StargazerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C0AB46E83745DFB00E660C /* Pods-StargazerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazerTests.release.xcconfig"; path = "Target Support Files/Pods-StargazerTests/Pods-StargazerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B994D59CEDAD7340B7E0416C /* Pods_StargazerV0.framework in Frameworks */,
+				C012725FDBB250B212BA34DA /* Pods_Stargazer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88841765700DEBB58BEC0167 /* Pods_StargazerV0Tests.framework in Frameworks */,
+				430D9BCBAF5F8650678966F3 /* Pods_StargazerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026DB089135178BCC6A3C1E9 /* Pods_StargazerV0_StargazerV0UITests.framework in Frameworks */,
+				D5B96D2658476CB88906C836 /* Pods_Stargazer_StargazerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,29 +125,29 @@
 		5FFDE7E62726FBE800A1E577 = {
 			isa = PBXGroup;
 			children = (
-				5FFDE7F12726FBE800A1E577 /* StargazerV0 */,
-				5FFDE8022726FBEA00A1E577 /* StargazerV0Tests */,
-				5FFDE80C2726FBEA00A1E577 /* StargazerV0UITests */,
+				5FFDE7F12726FBE800A1E577 /* Stargazer */,
+				5FFDE8022726FBEA00A1E577 /* StargazerTests */,
+				5FFDE80C2726FBEA00A1E577 /* StargazerUITests */,
 				5FFDE7F02726FBE800A1E577 /* Products */,
 				844CC1AB58A26A7F03E0180D /* Pods */,
-				B7E444F74EFAD31950CB2D08 /* Frameworks */,
+				DCD0DF24DB373946C3036312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5FFDE7F02726FBE800A1E577 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDE7EF2726FBE800A1E577 /* StargazerV0.app */,
-				5FFDE7FF2726FBEA00A1E577 /* StargazerV0Tests.xctest */,
-				5FFDE8092726FBEA00A1E577 /* StargazerV0UITests.xctest */,
+				5FFDE7EF2726FBE800A1E577 /* Stargazer.app */,
+				5FFDE7FF2726FBEA00A1E577 /* StargazerTests.xctest */,
+				5FFDE8092726FBEA00A1E577 /* StargazerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FFDE7F12726FBE800A1E577 /* StargazerV0 */ = {
+		5FFDE7F12726FBE800A1E577 /* Stargazer */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDE7F22726FBE800A1E577 /* StargazerV0App.swift */,
+				5FFDE7F22726FBE800A1E577 /* StargazerApp.swift */,
 				5F96062627281F7A0016160D /* Views */,
 				5F96062227281D660016160D /* View Models */,
 				5FFDE7F82726FBE900A1E577 /* Preview Content */,
@@ -156,7 +156,7 @@
 				5FFDE81E27270F9700A1E577 /* Service */,
 				5FFDE82227272D9F00A1E577 /* Common */,
 			);
-			path = StargazerV0;
+			path = Stargazer;
 			sourceTree = "<group>";
 		};
 		5FFDE7F82726FBE900A1E577 /* Preview Content */ = {
@@ -167,7 +167,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5FFDE8022726FBEA00A1E577 /* StargazerV0Tests */ = {
+		5FFDE8022726FBEA00A1E577 /* StargazerTests */ = {
 			isa = PBXGroup;
 			children = (
 				5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */,
@@ -175,14 +175,14 @@
 				5F78EBFD2729640600CBC0DC /* MockGithubService.swift */,
 				5F78EBFF2729940800CBC0DC /* GithubServicIntegrationTests.swift */,
 			);
-			path = StargazerV0Tests;
+			path = StargazerTests;
 			sourceTree = "<group>";
 		};
-		5FFDE80C2726FBEA00A1E577 /* StargazerV0UITests */ = {
+		5FFDE80C2726FBEA00A1E577 /* StargazerUITests */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = StargazerV0UITests;
+			path = StargazerUITests;
 			sourceTree = "<group>";
 		};
 		5FFDE81E27270F9700A1E577 /* Service */ = {
@@ -220,22 +220,22 @@
 		844CC1AB58A26A7F03E0180D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				20255AE7B41E08A7EC1A2139 /* Pods-StargazerV0.debug.xcconfig */,
-				B60C4DC544C8954539AC9609 /* Pods-StargazerV0.release.xcconfig */,
-				8456E2362781CDD937FA3009 /* Pods-StargazerV0-StargazerV0UITests.debug.xcconfig */,
-				71869614FC27A3A671566062 /* Pods-StargazerV0-StargazerV0UITests.release.xcconfig */,
-				AEF0404DAE41F7BE758CC788 /* Pods-StargazerV0Tests.debug.xcconfig */,
-				D95E87074856F393E8629C0D /* Pods-StargazerV0Tests.release.xcconfig */,
+				0C928E11749EB10A2FC88F69 /* Pods-Stargazer.debug.xcconfig */,
+				88BFB890E273632B4751B0A4 /* Pods-Stargazer.release.xcconfig */,
+				D5FBAE817AB9AC0A25886CDA /* Pods-Stargazer-StargazerUITests.debug.xcconfig */,
+				88FCF13F767C2559A0C89D9A /* Pods-Stargazer-StargazerUITests.release.xcconfig */,
+				45F8FFC45BCDDCB80A0BCCA3 /* Pods-StargazerTests.debug.xcconfig */,
+				F8C0AB46E83745DFB00E660C /* Pods-StargazerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B7E444F74EFAD31950CB2D08 /* Frameworks */ = {
+		DCD0DF24DB373946C3036312 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD8890072E89BB8C083660DF /* Pods_StargazerV0.framework */,
-				4A184DB9A82BCB65DF49E565 /* Pods_StargazerV0_StargazerV0UITests.framework */,
-				8F93F84D21B5A34F45592548 /* Pods_StargazerV0Tests.framework */,
+				4DBE9E9853980E258659A219 /* Pods_Stargazer.framework */,
+				8BDD7D7EBD5E4898ED546DA6 /* Pods_Stargazer_StargazerUITests.framework */,
+				9F7C869AE5030E168EE07E5A /* Pods_StargazerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,30 +243,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FFDE7EE2726FBE800A1E577 /* StargazerV0 */ = {
+		5FFDE7EE2726FBE800A1E577 /* Stargazer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFDE8132726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0" */;
+			buildConfigurationList = 5FFDE8132726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "Stargazer" */;
 			buildPhases = (
-				28F13E6160947BBDB57AEFE1 /* [CP] Check Pods Manifest.lock */,
+				456EF3A073BE83AB0B439C19 /* [CP] Check Pods Manifest.lock */,
 				5FFDE7EB2726FBE800A1E577 /* Sources */,
 				5FFDE7EC2726FBE800A1E577 /* Frameworks */,
 				5FFDE7ED2726FBE800A1E577 /* Resources */,
-				2038B191976567698FB2E406 /* [CP] Embed Pods Frameworks */,
+				006A023B571821B39A837430 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StargazerV0;
+			name = Stargazer;
 			productName = StargazerV0;
-			productReference = 5FFDE7EF2726FBE800A1E577 /* StargazerV0.app */;
+			productReference = 5FFDE7EF2726FBE800A1E577 /* Stargazer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5FFDE7FE2726FBEA00A1E577 /* StargazerV0Tests */ = {
+		5FFDE7FE2726FBEA00A1E577 /* StargazerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFDE8162726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0Tests" */;
+			buildConfigurationList = 5FFDE8162726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerTests" */;
 			buildPhases = (
-				27C17C172E552E413D8C0544 /* [CP] Check Pods Manifest.lock */,
+				F0530D3CF1DA9E465D3C914D /* [CP] Check Pods Manifest.lock */,
 				5FFDE7FB2726FBEA00A1E577 /* Sources */,
 				5FFDE7FC2726FBEA00A1E577 /* Frameworks */,
 				5FFDE7FD2726FBEA00A1E577 /* Resources */,
@@ -276,29 +276,29 @@
 			dependencies = (
 				5FFDE8012726FBEA00A1E577 /* PBXTargetDependency */,
 			);
-			name = StargazerV0Tests;
+			name = StargazerTests;
 			productName = StargazerV0Tests;
-			productReference = 5FFDE7FF2726FBEA00A1E577 /* StargazerV0Tests.xctest */;
+			productReference = 5FFDE7FF2726FBEA00A1E577 /* StargazerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5FFDE8082726FBEA00A1E577 /* StargazerV0UITests */ = {
+		5FFDE8082726FBEA00A1E577 /* StargazerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FFDE8192726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0UITests" */;
+			buildConfigurationList = 5FFDE8192726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerUITests" */;
 			buildPhases = (
-				9443E345FEBE043E4D28E794 /* [CP] Check Pods Manifest.lock */,
+				B3ACDFD73AA275B10C17E4AA /* [CP] Check Pods Manifest.lock */,
 				5FFDE8052726FBEA00A1E577 /* Sources */,
 				5FFDE8062726FBEA00A1E577 /* Frameworks */,
 				5FFDE8072726FBEA00A1E577 /* Resources */,
-				26354EEE00743034E23FF5C9 /* [CP] Embed Pods Frameworks */,
+				F797FC69C128B2D800B5D903 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				5FFDE80B2726FBEA00A1E577 /* PBXTargetDependency */,
 			);
-			name = StargazerV0UITests;
+			name = StargazerUITests;
 			productName = StargazerV0UITests;
-			productReference = 5FFDE8092726FBEA00A1E577 /* StargazerV0UITests.xctest */;
+			productReference = 5FFDE8092726FBEA00A1E577 /* StargazerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5FFDE7EA2726FBE800A1E577 /* Build configuration list for PBXProject "StargazerV0" */;
+			buildConfigurationList = 5FFDE7EA2726FBE800A1E577 /* Build configuration list for PBXProject "Stargazer" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -337,9 +337,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FFDE7EE2726FBE800A1E577 /* StargazerV0 */,
-				5FFDE7FE2726FBEA00A1E577 /* StargazerV0Tests */,
-				5FFDE8082726FBEA00A1E577 /* StargazerV0UITests */,
+				5FFDE7EE2726FBE800A1E577 /* Stargazer */,
+				5FFDE7FE2726FBEA00A1E577 /* StargazerTests */,
+				5FFDE8082726FBEA00A1E577 /* StargazerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,104 +371,104 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2038B191976567698FB2E406 /* [CP] Embed Pods Frameworks */ = {
+		006A023B571821B39A837430 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StargazerV0/Pods-StargazerV0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazer/Pods-Stargazer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StargazerV0/Pods-StargazerV0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazer/Pods-Stargazer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StargazerV0/Pods-StargazerV0-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stargazer/Pods-Stargazer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		26354EEE00743034E23FF5C9 /* [CP] Embed Pods Frameworks */ = {
+		456EF3A073BE83AB0B439C19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StargazerV0-StargazerV0UITests/Pods-StargazerV0-StargazerV0UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stargazer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3ACDFD73AA275B10C17E4AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stargazer-StargazerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0530D3CF1DA9E465D3C914D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StargazerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F797FC69C128B2D800B5D903 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazer-StargazerUITests/Pods-Stargazer-StargazerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StargazerV0-StargazerV0UITests/Pods-StargazerV0-StargazerV0UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazer-StargazerUITests/Pods-Stargazer-StargazerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StargazerV0-StargazerV0UITests/Pods-StargazerV0-StargazerV0UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27C17C172E552E413D8C0544 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StargazerV0Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		28F13E6160947BBDB57AEFE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StargazerV0-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9443E345FEBE043E4D28E794 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StargazerV0-StargazerV0UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stargazer-StargazerUITests/Pods-Stargazer-StargazerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -485,7 +485,7 @@
 				5FFDE82927272E9C00A1E577 /* Github.swift in Sources */,
 				5F96062A272823E40016160D /* StargazerList.swift in Sources */,
 				5F2C22DF27294B64003B2DC0 /* View+Extensions.swift in Sources */,
-				5FFDE7F32726FBE800A1E577 /* StargazerV0App.swift in Sources */,
+				5FFDE7F32726FBE800A1E577 /* StargazerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,12 +516,12 @@
 /* Begin PBXTargetDependency section */
 		5FFDE8012726FBEA00A1E577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5FFDE7EE2726FBE800A1E577 /* StargazerV0 */;
+			target = 5FFDE7EE2726FBE800A1E577 /* Stargazer */;
 			targetProxy = 5FFDE8002726FBEA00A1E577 /* PBXContainerItemProxy */;
 		};
 		5FFDE80B2726FBEA00A1E577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5FFDE7EE2726FBE800A1E577 /* StargazerV0 */;
+			target = 5FFDE7EE2726FBE800A1E577 /* Stargazer */;
 			targetProxy = 5FFDE80A2726FBEA00A1E577 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -645,13 +645,13 @@
 		};
 		5FFDE8142726FBEA00A1E577 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20255AE7B41E08A7EC1A2139 /* Pods-StargazerV0.debug.xcconfig */;
+			baseConfigurationReference = 0C928E11749EB10A2FC88F69 /* Pods-Stargazer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StargazerV0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stargazer/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -666,8 +666,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.StargazerV0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolamargoni.Stargazer;
+				PRODUCT_NAME = Stargazer;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,13 +676,13 @@
 		};
 		5FFDE8152726FBEA00A1E577 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B60C4DC544C8954539AC9609 /* Pods-StargazerV0.release.xcconfig */;
+			baseConfigurationReference = 88BFB890E273632B4751B0A4 /* Pods-Stargazer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StargazerV0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Stargazer/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -697,8 +697,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.StargazerV0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = nicolamargoni.Stargazer;
+				PRODUCT_NAME = Stargazer;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -707,7 +707,7 @@
 		};
 		5FFDE8172726FBEA00A1E577 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEF0404DAE41F7BE758CC788 /* Pods-StargazerV0Tests.debug.xcconfig */;
+			baseConfigurationReference = 45F8FFC45BCDDCB80A0BCCA3 /* Pods-StargazerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -726,13 +726,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StargazerV0.app/StargazerV0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazer.app/Stargazer";
 			};
 			name = Debug;
 		};
 		5FFDE8182726FBEA00A1E577 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D95E87074856F393E8629C0D /* Pods-StargazerV0Tests.release.xcconfig */;
+			baseConfigurationReference = F8C0AB46E83745DFB00E660C /* Pods-StargazerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,13 +751,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StargazerV0.app/StargazerV0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazer.app/Stargazer";
 			};
 			name = Release;
 		};
 		5FFDE81A2726FBEA00A1E577 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8456E2362781CDD937FA3009 /* Pods-StargazerV0-StargazerV0UITests.debug.xcconfig */;
+			baseConfigurationReference = D5FBAE817AB9AC0A25886CDA /* Pods-Stargazer-StargazerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -780,7 +780,7 @@
 		};
 		5FFDE81B2726FBEA00A1E577 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71869614FC27A3A671566062 /* Pods-StargazerV0-StargazerV0UITests.release.xcconfig */;
+			baseConfigurationReference = 88FCF13F767C2559A0C89D9A /* Pods-Stargazer-StargazerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,7 +804,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FFDE7EA2726FBE800A1E577 /* Build configuration list for PBXProject "StargazerV0" */ = {
+		5FFDE7EA2726FBE800A1E577 /* Build configuration list for PBXProject "Stargazer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFDE8112726FBEA00A1E577 /* Debug */,
@@ -813,7 +813,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFDE8132726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0" */ = {
+		5FFDE8132726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "Stargazer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFDE8142726FBEA00A1E577 /* Debug */,
@@ -822,7 +822,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFDE8162726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0Tests" */ = {
+		5FFDE8162726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFDE8172726FBEA00A1E577 /* Debug */,
@@ -831,7 +831,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FFDE8192726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerV0UITests" */ = {
+		5FFDE8192726FBEA00A1E577 /* Build configuration list for PBXNativeTarget "StargazerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FFDE81A2726FBEA00A1E577 /* Debug */,
