@@ -10,11 +10,36 @@ struct StargazerList: View {
     var body: some View {
         NavigationView {
             VStack {
-                form()
+                title("✨ Stargazers ✨")
+                header()
                 list()
                 Spacer()
-            }.navigationBarTitle("Stargazers")
+            }.navigationBarHidden(true)
         }
+    }
+    
+    fileprivate func header() -> some View {
+        VStack {
+            if viewModel.state.list == nil {
+                form()
+            } else {
+                HStack {
+                    Text("\(viewModel.state.owner)/\(viewModel.state.repo)")
+                        .font(.body)
+                    Spacer()
+                    button(title: "Reset") {
+                        viewModel.reset()
+                    }
+                }.padding(20)
+            }
+        }
+    }
+    
+    fileprivate func title(_ text: String) -> some View {
+        Text(text)
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .padding(20)
     }
     
     fileprivate func form() -> some View {
@@ -42,20 +67,22 @@ struct StargazerList: View {
     }
     
     fileprivate func list() -> some View {
-        List {
+        VStack {
             if let list = viewModel.state.list {
-                ForEach(list) { stargazer in
-                    StargazerRow(stargazer: stargazer)
-                }
-                
-                if !viewModel.state.allDataLoaded {
-                    HStack {
-                        Spacer()
-                        ProgressView()
-                            .onAppear {
-                                viewModel.loadMore()
-                            }
-                        Spacer()
+                List {
+                    ForEach(list) { stargazer in
+                        StargazerRow(stargazer: stargazer)
+                    }
+                    
+                    if !viewModel.state.allDataLoaded {
+                        HStack {
+                            Spacer()
+                            ProgressView()
+                                .onAppear {
+                                    viewModel.loadMore()
+                                }
+                            Spacer()
+                        }
                     }
                 }
             }

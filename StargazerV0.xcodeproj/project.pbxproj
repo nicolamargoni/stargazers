@@ -19,8 +19,6 @@
 		5FFDE7F32726FBE800A1E577 /* StargazerV0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F22726FBE800A1E577 /* StargazerV0App.swift */; };
 		5FFDE7F72726FBE900A1E577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F62726FBE900A1E577 /* Assets.xcassets */; };
 		5FFDE7FA2726FBE900A1E577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDE7F92726FBE900A1E577 /* Preview Assets.xcassets */; };
-		5FFDE80E2726FBEA00A1E577 /* StargazerV0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE80D2726FBEA00A1E577 /* StargazerV0UITests.swift */; };
-		5FFDE8102726FBEA00A1E577 /* StargazerV0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE80F2726FBEA00A1E577 /* StargazerV0UITestsLaunchTests.swift */; };
 		5FFDE81D27270DFF00A1E577 /* GithubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */; };
 		5FFDE82027270FB500A1E577 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE81F27270FB500A1E577 /* GithubService.swift */; };
 		5FFDE821272725F700A1E577 /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDE81F27270FB500A1E577 /* GithubService.swift */; };
@@ -65,8 +63,6 @@
 		5FFDE7F92726FBE900A1E577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5FFDE7FF2726FBEA00A1E577 /* StargazerV0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerV0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFDE8092726FBEA00A1E577 /* StargazerV0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerV0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FFDE80D2726FBEA00A1E577 /* StargazerV0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerV0UITests.swift; sourceTree = "<group>"; };
-		5FFDE80F2726FBEA00A1E577 /* StargazerV0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerV0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5FFDE81C27270DFF00A1E577 /* GithubClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientTests.swift; sourceTree = "<group>"; };
 		5FFDE81F27270FB500A1E577 /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		5FFDE82427272DF500A1E577 /* Stargazer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
@@ -185,8 +181,6 @@
 		5FFDE80C2726FBEA00A1E577 /* StargazerV0UITests */ = {
 			isa = PBXGroup;
 			children = (
-				5FFDE80D2726FBEA00A1E577 /* StargazerV0UITests.swift */,
-				5FFDE80F2726FBEA00A1E577 /* StargazerV0UITestsLaunchTests.swift */,
 			);
 			path = StargazerV0UITests;
 			sourceTree = "<group>";
@@ -514,8 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFDE8102726FBEA00A1E577 /* StargazerV0UITestsLaunchTests.swift in Sources */,
-				5FFDE80E2726FBEA00A1E577 /* StargazerV0UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

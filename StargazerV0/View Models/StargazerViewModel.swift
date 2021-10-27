@@ -27,6 +27,14 @@ class StargazerViewModel: ObservableObject {
     func loadMore() {
         fetchStargazers {}
     }
+    
+    func reset() {
+        state.owner = ""
+        state.repo = ""
+        state.allDataLoaded = false
+        state.list = nil
+        state.error = nil
+    }
 
     private func fetchStargazers(completion: @escaping () -> Void) {
         service.stargazers(owner: state.owner, repo: state.repo, perPage: RESULTS_PER_PAGE, page: nextPage()) { [weak self] result in

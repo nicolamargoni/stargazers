@@ -100,6 +100,20 @@ class StargazerViewModelTests: XCTestCase {
         XCTAssertNil(viewModel.state.error)
     }
     
+    func testReset() {
+        let alreadyLoadedList: [Stargazer] = subList(from: 0, to: 9)
+        let state = StargazerViewModel.State(owner: "anyOwner", repo: "anyRepo", allDataLoaded: true, list: alreadyLoadedList)
+        initViewModel(with: state)
+        
+        viewModel.reset()
+        
+        XCTAssertTrue(viewModel.state.owner.isEmpty)
+        XCTAssertTrue(viewModel.state.repo.isEmpty)
+        XCTAssertNil(viewModel.state.list)
+        XCTAssertFalse(viewModel.state.allDataLoaded)
+        XCTAssertNil(viewModel.state.error)
+    }
+    
     private func subList(from: Int, to: Int) -> [Stargazer] {
         Array(fullList[from...to])
     }
